@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <title>test-task-1-Natalya-</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light p-5">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./icon/kisspng-money-coin-clip-art-coin-cliparts-free-5ab81862538071.160793131522014306342.png"
+          width="60"
+          height="65"
+          alt=""
+        />
+        Копійка
+      </a>
+
+      <div
+        class="collapse navbar-collapse d-flex justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li class="row mr-3" >
+            <b>USD</b>
+              <div class="col" data-value="USD-buy">--.--</div>
+              <div class="col" data-value="USD-sale">--.--</div>
+          </li>
+          <li class="row" >
+            <b>EUR</b>
+              <div class="col" data-value="EUR-buy">--.--</div>
+              <div class="col" data-value="EUR-sale">--.--</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid d-flex h-100 justify-content-center align-items-center pt-5" >
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="card p-5">
+            <form>
+              <h1 class="h2 mb-4">Конвертер валют</h1>
+
+              <div class="row justify-content-md-center">
+                <div class="col col-lg-5">
+                  <div class="row">
+                    <div class="col mb-2">
+                      <label for="name">Віддаю:</label>
+                      <select
+                        id="selectFrom"
+                        class="form-control"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option value="UAH" selected>
+                          UAH — Українська гривня
+                        </option>
+                        <option value="USD">USD — Доллар США</option>
+                        <option value="EUR">EUR — Євро</option>
+                      </select>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                      <input
+                        id="input"
+                        type="number"
+                        class="form-control"
+                        id="name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto d-flex align-items-end">
+                  <button type="button" class="btn btn-link" id="chageButton">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      class="bi bi-arrow-left-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="col col-lg-5">
+                  <div class="row">
+                    <div class="col mb-2">
+                      <label for="name">Отримую:</label>
+                      <select
+                        id="selectTo"
+                        class="form-control"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option value="UAH">UAH — Українська гривня</option>
+                        <option value="USD" selected>USD — Доллар США</option>
+                        <option value="EUR">EUR — Євро</option>
+                      </select>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                      <input
+                        id="result"
+                        type="number"
+                        class="form-control"
+                        id="name"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
